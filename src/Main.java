@@ -18,7 +18,18 @@ public class Main{
             WebDriver driver = new ChromeDriver(options);
             driver.manage().window().maximize();
             driver.get("https://www.saucedemo.com");
+            Thread.sleep(3000);
 
+            String title = "Swag Labs";
+            String getTile = driver.getTitle();
+
+            if (getTile.equals(title)) {
+                System.out.println("They matched...");
+
+            }
+            else {
+                System.out.println("Not good.. didn't match");
+            }
 //            IDs:
 //            user-name
 //            password
