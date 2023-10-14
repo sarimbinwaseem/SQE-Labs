@@ -1,0 +1,9 @@
+Classes: (Sauce Demo)
+this will run 2 times and will select random product each time.
+	login
+	productlistingpage
+		Select Random Product each time
+	cart
+	checkout
+
+samar4250@gmail.com
