@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd"
+[
+        <!ENTITY browser "chrome">
+        <!ENTITY emailReport "off">
+        <!ENTITY emailRecipients" "----">
+        ]>
+<suite name="Suite" verbose="1.0" configfailurepolicy="skip">
+    <listeners>
+        <listener class-name="Runner.TestRunnerListener"></listener>
+    </listeners>
+    <test name="Automation Framework">
+          <parameter name="browser" value="&browser;"></parameter>
+    <classes>
+        <class name="Runner.Runner"></class>
+    </classes>
+    </test>
+</suite>
